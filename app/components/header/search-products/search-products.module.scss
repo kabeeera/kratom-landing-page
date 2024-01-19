@@ -1,0 +1,26 @@
+@import "@/styles/variables.scss";
+
+.search_product_wrapper {
+  position: relative;
+  min-width: 600px;
+  flex: 1;
+  .search_input {
+    height: 50px;
+    background: transparent;
+    font-size: $font-size-md;
+    padding-right: 130px;
+  }
+  .search_btn {
+    font-size: $font-size-sm;
+    position: absolute;
+    top: 6px;
+    right: 6px;
+    bottom: 6px;
+    padding: 8px 15px;
+    min-width: auto;
+
+    img {
+      margin-right: 10px;
+    }
+  }
+}

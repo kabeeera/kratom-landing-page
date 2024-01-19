@@ -1,0 +1,17 @@
+@import "@/styles/variables.scss";
+
+.category_wrapper {
+  text-align: center;
+  cursor: pointer;
+
+  img {
+    width: 100%;
+  }
+  h6 {
+    font-size: calc($font-size-xl - 2px);
+    margin: 20px 0 0px;
+  }
+  h3 {
+    font-size: calc($font-size-xl + 8px);
+  }
+}

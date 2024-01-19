@@ -1,0 +1,106 @@
+@import "@/styles/variables.scss";
+
+.header_wrapper {
+  .top_bar {
+    background-color: $primary-color;
+    padding: 12px 0 8px;
+    p {
+      color: $secondary-color;
+      text-align: center;
+      font-size: $font-size-md;
+      font-weight: 500;
+      margin: 0;
+      line-height: 1.3;
+    }
+  }
+  .header_inner {
+    .middle_bar {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      padding: 20px 0 15px;
+
+      .search_action_wrapper {
+        display: flex;
+        align-items: center;
+        justify-content: flex-end;
+        gap: 18px;
+        .cart,
+        .account {
+          width: 50px;
+          height: 50px;
+          background-color: #e3f1ce;
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          border-radius: 50%;
+          cursor: pointer;
+        }
+        .cart {
+          position: relative;
+          span {
+            background-color: $primary-color;
+            color: #fff;
+            font-size: calc($font-size-xs - 2px);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            border-radius: 50%;
+            position: absolute;
+            width: 15px;
+            height: 15px;
+            top: 10px;
+            right: 7px;
+            font-weight: 500;
+            padding-top: 2px;
+          }
+        }
+      }
+    }
+    .bottom_bar {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      padding: 15px 0 20px;
+      li {
+        display: inline-block;
+        line-height: 1;
+
+        &:hover {
+          color: $primary-color;
+
+          a {
+            &:before {
+              content: "";
+              width: 20px;
+              height: 20px;
+              background-color: $primary-color;
+              border-radius: 50%;
+              position: absolute;
+              bottom: 0;
+              z-index: -1;
+            }
+          }
+        }
+        a {
+          color: $secondary-color;
+          position: relative;
+          z-index: 1;
+
+          font-size: $font-size-md;
+        }
+      }
+
+      .product_nav {
+        li {
+          margin-right: 20px;
+        }
+      }
+      .site_nav {
+        li {
+          margin-left: 20px;
+        }
+      }
+    }
+  }
+}

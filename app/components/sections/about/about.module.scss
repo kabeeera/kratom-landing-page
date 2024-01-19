@@ -1,0 +1,52 @@
+@import "@/styles/variables.scss";
+
+.about_wrapper {
+  min-height: 500px;
+  margin-bottom: 80px;
+  box-shadow: 0px 20px 20px 0px #0000001f;
+  border-radius: 10px;
+  margin-top: -100px;
+  background: #fff;
+  display: flex;
+  background-image: url("/assets/images/about-after.png");
+  background-repeat: no-repeat;
+  background-position: right -30px bottom -30px;
+  background-size: 230px;
+
+  .about_title {
+    background-image: url("/assets/images/about-bg.png");
+    background-repeat: no-repeat;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+    color: #fff;
+    flex: 1 0 45%;
+    padding: 0 6%;
+    h6 {
+      font-size: calc($font-size-xl + 8px);
+      font-weight: 500;
+    }
+    h2 {
+      font-size: calc($font-size-xxl + 10px);
+      margin: 15px 0;
+      font-weight: 800;
+      line-height: 1;
+    }
+    p {
+      font-size: $font-size-lg;
+      margin: 0;
+    }
+  }
+  .about_des {
+    background-image: url("/assets/images/about-des-bg.png");
+    background-repeat: no-repeat;
+    background-size: 380px;
+    background-position: center;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+    padding: 0 6%;
+  }
+}

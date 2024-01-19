@@ -1,0 +1,46 @@
+@import "@/styles/variables.scss";
+
+.testimonials_wrapper {
+  text-align: center;
+  background-image: url("/assets/images/test-bg.png");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-color: #e9f3ec;
+  padding: 80px 0;
+  position: relative;
+
+  h2 {
+    margin-top: 10px;
+  }
+  .testimonials_inner_wrapper {
+    width: 85%;
+    margin: 0 auto;
+  }
+  .single_testimonial {
+    text-align: center;
+    img {
+      margin: 10px 0;
+    }
+    p {
+      font-size: calc($font-size-xl - 2px);
+    }
+    h3 {
+      font-size: calc($font-size-xl - 2px);
+      font-weight: 700;
+    }
+  }
+  .prevNav {
+    left: 10px;
+  }
+  .nextNav {
+    right: 10px;
+  }
+
+  .nextNav,
+  .prevNav {
+    position: absolute;
+    top: 50%;
+
+    cursor: pointer;
+  }
+}

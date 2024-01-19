@@ -1,0 +1,23 @@
+@import "@/styles/variables.scss";
+
+.categories_wrapper {
+  padding-bottom: 60px;
+
+  .categories_slider {
+    position: relative;
+    .prevNav {
+      left: -50px;
+    }
+    .nextNav {
+      right: -50px;
+    }
+
+    .nextNav,
+    .prevNav {
+      position: absolute;
+      top: 50%;
+      z-index: 999;
+      cursor: pointer;
+    }
+  }
+}

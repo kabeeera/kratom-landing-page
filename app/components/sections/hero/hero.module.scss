@@ -1,0 +1,43 @@
+@import "@/styles/variables.scss";
+
+.hero_wrapper {
+  background-color: #e9f1e0;
+  background-image: url("/assets/images/hero-bg.png");
+  background-repeat: no-repeat;
+  background-position: top 65px left -150px;
+  background-size: 800px;
+  padding: 100px 0 200px;
+  .hero_content {
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding-right: 80px;
+    h1 {
+      font-size: 80px;
+      color: $primary-color;
+      font-weight: 800;
+      line-height: 1;
+      span {
+        display: block;
+        color: #000;
+        font-weight: 400;
+      }
+    }
+    hr {
+      border-color: #6dbb00;
+      border-width: 3px;
+      width: 50%;
+      margin: 20px 0 25px;
+    }
+    .hero_btn {
+      width: fit-content;
+      margin-bottom: 20px;
+    }
+  }
+}
+.hero_img {
+  img {
+    width: 100%;
+  }
+}
